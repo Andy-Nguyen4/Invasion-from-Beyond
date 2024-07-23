@@ -1,27 +1,20 @@
 import React from 'react';
-import './css/app.css';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import GameMenu from './pages/game-menu';
+import NewGame from './pages/new-game';
 
 function App() {
+
   return (
     <div className="App">
 
-      <div className="title">
-        <h1>INVASION from BEYOND</h1>
-        {/*<h2>FROM</h2>
-        <h1>BEYOND</h1>*/}
-      </div>
-
-      <div className="button-area">
-        <button className="new-game">New Game</button>
-        <br></br>
-        <button className="load-game">Load Game</button>
-        <br></br>
-        <button className="settings">Settings</button>
-        <br></br>
-        <button className="extra">Extra Content</button>
-        <br></br>
-        <button className="quit">Quit</button>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<GameMenu />} />
+          <Route path='/game-menu' element={<GameMenu />} />
+          <Route path='/new-game' element={<NewGame />} />
+        </Routes>
+      </BrowserRouter>
 
     </div>
   );
