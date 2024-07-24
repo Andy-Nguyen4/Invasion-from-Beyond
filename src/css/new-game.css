@@ -15,10 +15,18 @@
 
 .new-file {
     text-align: center;
+    padding: 20px 0px;
+}
+
+input[type=text] {
+    padding: 8px 20px;
+    margin: 10px 0px;
+    font-size: 16px;
 }
 
 .difficulty {
     text-align: center;
+    padding: 20px;
 }
 
 [class*="mode"] {
@@ -26,11 +34,11 @@
     background-color: transparent;
     color: white;
     font-family: 'Audiowide', Georgia;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
     padding: 20px;
-    margin: 10px 5px;
+    margin: 10px;
     transition-duration: 0.5s;
 }
 
@@ -39,6 +47,14 @@
     color: black;
 }
 
+[class*="mode"]:active {
+    transform: translateY(5px);
+}
+
 .new-game-go-back {
     text-align: center;
+}
+
+.new-game-back-btn {
+    margin: 40px 5px 10px;
 }
