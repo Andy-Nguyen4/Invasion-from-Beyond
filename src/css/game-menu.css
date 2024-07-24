@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-button {
+[class$="btn"] {
     border: none;
     background-color: transparent;
     color: white;
@@ -37,7 +37,7 @@ button {
     transition-duration: 0.5s;
 }
 
-button:hover {
+[class$="btn"]:hover {
     background-color: white;
     color: black;
 }

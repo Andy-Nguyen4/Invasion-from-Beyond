@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.new-game-container {
+.load-game-container {
     background-image: url("../images/invasion2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,32 +13,48 @@
     color: white;
 }
 
-.new-file {
+.load-title {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 25px;
+}
+
+.load-area {
     text-align: center;
 }
 
-.difficulty {
+.load-file {
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    width: 50%;
+    color: black;
+    cursor: pointer;
+}
+
+.load-file:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 3px solid white;
+}
+
+.load-game-go-back {
     text-align: center;
 }
 
-[class*="mode"] {
+.load-game-back-btn {
     border: none;
     background-color: transparent;
-    color: white;
     font-family: 'Audiowide', Georgia;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
     padding: 20px;
-    margin: 10px 5px;
+    margin: 40px 5px 10px;
     transition-duration: 0.5s;
 }
 
-[class*="mode"]:hover {
+/*.load-game-back-btn:hover {
     background-color: white;
     color: black;
-}
-
-.new-game-go-back {
-    text-align: center;
-}
+}*/

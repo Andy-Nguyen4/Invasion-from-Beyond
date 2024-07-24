@@ -22,20 +22,19 @@ function NewGame() {
 
                 <div className="difficulty">
                     <h1>Choose your difficulty</h1>
-                    <button className="easy">Easy</button>
-                    <button className="normal">Normal</button>
-                    <button className="hard">Hard</button>
-                    <button className="nightmare">Nightmare</button>
-                    <button className="apocalypse">Apocalypse</button>
+                    <button className="easy-mode">Easy</button>
+                    <button className="normal-mode">Normal</button>
+                    <button className="hard-mode">Hard</button>
+                    <button className="nightmare-mode">Nightmare</button>
+                    <button className="apocalypse-mode">Apocalypse</button>
                 </div>
 
-                <div className="go-back">
-                    <button className="back" onClick={handleGoBack}>Back</button>
+                <div className="new-game-go-back">
+                    <button className="new-game-back-btn" onClick={handleGoBack}>Back</button>
                 </div>
 
             </div>
         </div>
-
     );
 }
 
