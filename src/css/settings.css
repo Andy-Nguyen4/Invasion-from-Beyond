@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+.settings-container {
+    background-image: url("../images/control-room.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Audiowide', Georgia;
+    color: white;
+}

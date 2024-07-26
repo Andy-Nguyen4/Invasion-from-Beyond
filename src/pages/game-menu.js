@@ -14,6 +14,14 @@ function GameMenu() {
         navigate("/load-game");
     };
 
+    const handleSettingsClick = () => {
+        navigate("/settings");
+    };
+
+    const handleExtraClick = () => {
+        navigate("/extra-content");
+    }
+
     return (
         <div className="game-menu-container">
             <div className="game-menu">
@@ -27,9 +35,9 @@ function GameMenu() {
                     <br></br>
                     <button className="load-game-btn" onClick={handleLoadGameClick}>Load Game</button>
                     <br></br>
-                    <button className="settings-btn">Settings</button>
+                    <button className="settings-btn" onClick={handleSettingsClick}>Settings</button>
                     <br></br>
-                    <button className="extra-btn">Extra Content</button>
+                    <button className="extra-btn" onClick={handleExtraClick}>Extra Content</button>
                     <br></br>
                     <button className="quit-btn">Quit</button>
                 </div>
